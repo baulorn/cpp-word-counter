@@ -1,9 +1,10 @@
-
 #include <iostream>
 #include <string>
 
-int main(){
+int main()
+{
     std::string text;
+
     std::cout << "Enter a line: ";
     std::getline(std::cin, text);
 
@@ -11,11 +12,15 @@ int main(){
     bool inWord = false;
     int i = 0;
 
-    while (i < text.length()){
-        if (text[i] != ' ' && inWord == false){
+    while (i < text.length())
+    {
+        if (text[i] != ' ' && inWord == false)
+        {
             wordCount++;
             inWord = true;
-        }else if (text[i] == ' '){
+        }
+        else if (text[i] == ' ')
+        {
             inWord = false;
         }
 
