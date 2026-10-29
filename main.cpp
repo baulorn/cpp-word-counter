@@ -27,5 +27,5 @@ int main()
         i++;
     }
 
-    std::cout << wordCount << "\\n";
+    std::cout << wordCount << "\n";
 }
